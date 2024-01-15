@@ -21,7 +21,7 @@ body {
 }
 .leftContainer {
   width: 40%;
-  height: 350px;
+  height: 360px;
   padding: 10px;
   border: 5px;
   display: flex;
@@ -79,7 +79,7 @@ body {
 }
 .rightContainer {
   width: 24%;
-  height: 350px;
+  height: 360px;
   background-color: red;
   padding: 10px;
   border-radius: 5px;
@@ -117,7 +117,7 @@ body {
 }
 .totalPrice {
   position: sticky;
-  bottom: -10px;
+  bottom: -5px;
   width: 285px;
   margin-top: 1rem;
   display: flex;
@@ -152,7 +152,7 @@ body {
   }
   .leftContainer {
     width: 90%;
-    height: 350px;
+    height: 360px;
     padding: 10px;
     border: 5px;
     display: flex;
@@ -165,7 +165,7 @@ body {
   }
   .rightContainer {
     width: 90%;
-    height: 350px;
+    height: 360px;
     margin-bottom: 2rem;
     background-color: red;
     padding: 10px;
@@ -178,7 +178,7 @@ body {
   }
   .totalPrice {
     position: sticky;
-    bottom: -10px;
+    bottom: -5px;
     width: 268px;
     margin-top: 1rem;
     display: flex;
@@ -210,7 +210,7 @@ body {
   }
   .leftContainer {
     width: 90%;
-    height: 350px;
+    height: 360px;
     padding: 10px;
     border: 5px;
     display: flex;
@@ -223,7 +223,7 @@ body {
   }
   .rightContainer {
     width: 90%;
-    height: 350px;
+    height: 360px;
     margin-bottom: 2rem;
     background-color: red;
     padding: 10px;
@@ -236,7 +236,7 @@ body {
   }
   .totalPrice {
     position: sticky;
-    bottom: -10px;
+    bottom: -5px;
     width: 316px;
     margin-top: 1rem;
     display: flex;
@@ -268,7 +268,7 @@ body {
   }
   .leftContainer {
     width: 90%;
-    height: 350px;
+    height: 360px;
     padding: 10px;
     border: 5px;
     display: flex;
@@ -281,7 +281,7 @@ body {
   }
   .rightContainer {
     width: 90%;
-    height: 350px;
+    height: 360px;
     margin-bottom: 2rem;
     background-color: red;
     padding: 10px;
@@ -294,8 +294,66 @@ body {
   }
   .totalPrice {
     position: sticky;
-    bottom: -10px;
+    bottom: -5px;
     width: 360px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  body {
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(45deg, lightblue, transparent);
+    overflow-y: scroll;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .leftContainer {
+    width: 90%;
+    height: 360px;
+    padding: 10px;
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .rightContainer {
+    width: 90%;
+    height: 360px;
+    margin-bottom: 2rem;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: cadetblue;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .totalPrice {
+    position: sticky;
+    bottom: -5px;
+    width: 670px;
     margin-top: 1rem;
     display: flex;
     justify-content: center;

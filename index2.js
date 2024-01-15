@@ -46,7 +46,6 @@ function renderCart(e, count) {
   totalPrice.innerText = `Total: ₹${total}`;
   totalPrice.style.backgroundColor = "#008585";
   totalPrice.style.padding = "10px 15px";
-  // totalPrice.style.color = "white";
 
   if (cartList.children.length === 0) {
     cartList.appendChild(cartText);
@@ -58,7 +57,8 @@ function renderCart(e, count) {
 
 
 
-//   click events on buttons for adding and removing carts
+//   click events on buttons for adding and removing carts  
+  
 productsList.addEventListener("click", (e) => {
   if (e.target.innerText === "+") {
     let count = Number(e.target.parentNode.children[1].innerText);
