@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductOfLits || cart</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        height: auto;
+        width: 100vw;
+        background: linear-gradient(45deg, lightblue, transparent);
+        overflow: hidden;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        /* filter: drop-shadow(2px 4px 6px red); */
+      }
+      .leftContainer {
+        width: 40%;
+        height: 350px;
+        padding: 10px;
+        border: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        border-radius: 5px;
+        background-color: cadetblue;
+      }
+      .leftContainer h2 {
+        color: white;
+      }
+
+      .productsList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2rem;
+        overflow-y: scroll;
+        padding-top: 9rem;
+      }
+
+      .productsList div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: paleturquoise;
+      }
+
+      .productsList div div {
+        width: 7rem;
+        height: 2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px;
+        font-size: 17px;
+        align-items: center;
+        border-radius: 4rem;
+        background-color: lightseagreen;
+      }
+
+      .productsList div div:hover {
+        cursor: pointer;
+      }
+      .productsList div div button:hover {
+        cursor: pointer;
+      }
+      .productsList div div button {
+        border: 0;
+        background-color: transparent;
+        font-size: 22px;
+      }
+      .rightContainer {
+        width: 24%;
+        height: 350px;
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: cadetblue;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .rightContainer h2 {
+        margin-bottom: 1rem;
+        color: white;
+      }
+      .cartList {
+        height: 74%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+        overflow-y: scroll;  
+        /* border: 1px solid red; */
+           
+      }
+  
+      .cardBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: paleturquoise; 
+        
+      }
+ 
+      .cartText {
+        margin-top: 1rem;
+      }
+      .totalPrice {
+        position: sticky;
+        bottom: -10px;
+        width: 285px;
+        margin-top:1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: white;
+        /* border: 1px solid red; */
+        padding: 0px 0px;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftContainer">
+        <h2>Available Products</h2>
+        <div class="productsList"></div>
+      </div>
+
+      <div class="rightContainer">
+        <h2>Carts</h2>
+        <p class="cartText"></p>
+          <div class="cartList"></div>
+        <p class="totalPrice"></p>
+      </div>
+    </div>
+
+    <script src="./index2.js"></script>
+  </body>
+</html>
