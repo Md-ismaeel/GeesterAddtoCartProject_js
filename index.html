@@ -15,13 +15,13 @@
       }
 
       body {
-        height: auto;
+        height: 100vh;
         width: 100vw;
         background: linear-gradient(45deg, lightblue, transparent);
         overflow: hidden;
       }
       .container {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -109,21 +109,19 @@
         flex-direction: column;
         gap: 0.8rem;
         margin-top: 1rem;
-        overflow-y: scroll;  
+        overflow-y: scroll;
         /* border: 1px solid red; */
-           
       }
-  
+
       .cardBox {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 15px;
         border-radius: 5px;
-        background-color: paleturquoise; 
-        
+        background-color: paleturquoise;
       }
- 
+
       .cartText {
         margin-top: 1rem;
       }
@@ -131,7 +129,7 @@
         position: sticky;
         bottom: -10px;
         width: 285px;
-        margin-top:1rem;
+        margin-top: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -143,6 +141,49 @@
       }
       ::-webkit-scrollbar {
         display: none;
+      }
+
+      @media screen and (max-width: 320px) {
+        body {
+          height: 100vh;
+          width: 100vw;
+          background: linear-gradient(45deg, lightblue, transparent);
+          overflow: hidden;
+        }
+        .container {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5%;
+        }
+        .leftContainer {
+          width: 100%;
+          height: 350px;
+          padding: 10px;
+          border: 5px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 10px;
+          border-radius: 5px;
+          background-color: cadetblue;
+          filter: drop-shadow(1px 2px 4px black);
+        }
+        .rightContainer {
+          width: 90%;
+          height: 350px;
+          background-color: red;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: center;
+          background-color: cadetblue;
+          overflow: hidden;
+          position: relative;
+          filter: drop-shadow(1px 2px 4px black);
+        }
       }
     </style>
   </head>
@@ -156,7 +197,7 @@
       <div class="rightContainer">
         <h2>Carts</h2>
         <p class="cartText"></p>
-          <div class="cartList"></div>
+        <div class="cartList"></div>
         <p class="totalPrice"></p>
       </div>
     </div>
