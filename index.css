@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, lightblue, transparent);
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.leftContainer {
+  width: 40%;
+  height: 350px;
+  padding: 10px;
+  border: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  border-radius: 5px;
+  background-color: cadetblue;
+  filter: drop-shadow(1px 2px 4px black);
+}
+.leftContainer h2 {
+  color: white;
+}
+
+.productsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  overflow-y: scroll;
+  padding-top: 9rem;
+}
+
+.productsList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: paleturquoise;
+}
+
+.productsList div div {
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  font-size: 17px;
+  align-items: center;
+  border-radius: 4rem;
+  background-color: lightseagreen;
+}
+
+.productsList div div:hover {
+  cursor: pointer;
+}
+.productsList div div button:hover {
+  cursor: pointer;
+}
+.productsList div div button {
+  border: 0;
+  background-color: transparent;
+  font-size: 22px;
+}
+.rightContainer {
+  width: 24%;
+  height: 350px;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: cadetblue;
+  overflow: hidden;
+  position: relative;
+  filter: drop-shadow(1px 2px 4px black);
+}
+
+.rightContainer h2 {
+  margin-bottom: 1rem;
+  color: white;
+}
+.cartList {
+  height: 74%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  overflow-y: scroll;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: paleturquoise;
+}
+
+.cartText {
+  margin-top: 1rem;
+}
+.totalPrice {
+  position: sticky;
+  bottom: -10px;
+  width: 285px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  /* border: 1px solid red; */
+  padding: 0px 0px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(45deg, lightblue, transparent);
+    overflow-y: scroll;
+  }
+  .container {
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .leftContainer {
+    width: 90%;
+    height: 350px;
+    padding: 10px;
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .rightContainer {
+    width: 90%;
+    height: 350px;
+    margin-bottom: 2rem;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: cadetblue;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .totalPrice {
+    position: sticky;
+    bottom: -10px;
+    width: 268px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  body {
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(45deg, lightblue, transparent);
+    overflow-y: scroll;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .leftContainer {
+    width: 90%;
+    height: 350px;
+    padding: 10px;
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .rightContainer {
+    width: 90%;
+    height: 350px;
+    margin-bottom: 2rem;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: cadetblue;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .totalPrice {
+    position: sticky;
+    bottom: -10px;
+    width: 316px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  body {
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(45deg, lightblue, transparent);
+    overflow-y: scroll;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .leftContainer {
+    width: 90%;
+    height: 350px;
+    padding: 10px;
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .rightContainer {
+    width: 90%;
+    height: 350px;
+    margin-bottom: 2rem;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: cadetblue;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(1px 2px 4px black);
+  }
+  .totalPrice {
+    position: sticky;
+    bottom: -10px;
+    width: 360px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    padding: 0px 0px;
+  }
+}
